@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "151947208888",
+    "firebase_url": "https://farm-linker-default-rtdb.firebaseio.com",
+    "project_id": "farm-linker",
+    "storage_bucket": "farm-linker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151947208888:android:3b30c79ea4ef875a146c4d",
+        "android_client_info": {
+          "package_name": "com.example.farm_linker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1j9vzgKeDcjlMBUrDIgvNOKZ_U6x9XYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
