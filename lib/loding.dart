@@ -1,7 +1,7 @@
-// ignore_for_file: use_super_parameters, library_private_types_in_public_api, prefer_const_constructors
+// ignore_for_file: use_super_parameters, library_private_types_in_public_api, prefer_const_constructors, unused_import
 
 import 'dart:async';
-import 'package:farm_linker/menu.dart';
+import 'package:farm_linker/navigationbar.dart';
 import 'package:flutter/material.dart';
 // Assuming you have a NextPage widget to navigate to, import it here.
 
@@ -19,7 +19,7 @@ class _LodingState extends State<Loding> {
     Timer(const Duration(seconds: 4), () {
       // Navigate to the NextPage widget after a delay
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => const Menu()),
+        MaterialPageRoute(builder: (_) => const NavigationMenu()),
       );
     });
   }
