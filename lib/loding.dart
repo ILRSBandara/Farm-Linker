@@ -2,6 +2,7 @@
 
 import 'dart:async';
 import 'package:farm_linker/navigationbar.dart';
+import 'package:farm_linker/userprofile.dart';
 import 'package:flutter/material.dart';
 // Assuming you have a NextPage widget to navigate to, import it here.
 
@@ -19,7 +20,7 @@ class _LodingState extends State<Loding> {
     Timer(const Duration(seconds: 4), () {
       // Navigate to the NextPage widget after a delay
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => const NavigationMenu()),
+        MaterialPageRoute(builder: (_) => const User_profile()),
       );
     });
   }
