@@ -1,18 +1,21 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, camel_case_types, unused_import
 
+import 'package:farm_linker/Editaddress.dart';
 import 'package:farm_linker/mycart.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
     MaterialApp(
-      home: UserProfile(),
+      home: UserProfile(
+        title: '',
+      ),
     ),
   );
 }
 
 class UserProfile extends StatelessWidget {
-  const UserProfile({Key? key});
+  const UserProfile({Key? key, required String title});
 
   @override
   Widget build(BuildContext context) {
@@ -150,6 +153,11 @@ class UserProfile extends StatelessWidget {
                 TextButton(
                   onPressed: () {
                     // Button action
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => EditAddressScreen()),
+                    );
                   },
                   child: Row(
                     children: [

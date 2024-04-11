@@ -18,7 +18,10 @@ class _LodingState extends State<Loding> {
     super.initState();
     Timer(const Duration(seconds: 4), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => const UserProfile()),
+        MaterialPageRoute(
+            builder: (_) => const UserProfile(
+                  title: '',
+                )),
       );
     });
   }

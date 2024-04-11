@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, camel_case_types, unused_import
 
+import 'package:farm_linker/Editaddress.dart';
+import 'package:farm_linker/summary.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -80,6 +82,11 @@ class MyCart extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     // Button action
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => EditAddressScreen()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Color.fromARGB(255, 238, 238, 238)),
@@ -131,6 +138,10 @@ class MyCart extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {
                 // Button action
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SummaryPage()),
+                );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color.fromARGB(
