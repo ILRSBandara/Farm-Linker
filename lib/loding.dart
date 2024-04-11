@@ -20,7 +20,7 @@ class _LodingState extends State<Loding> {
     Timer(const Duration(seconds: 4), () {
       // Navigate to the NextPage widget after a delay
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => const User_profile()),
+        MaterialPageRoute(builder: (_) => const UserProfile()),
       );
     });
   }

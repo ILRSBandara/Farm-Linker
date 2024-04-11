@@ -5,13 +5,13 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: User_profile(),
+      home: UserProfile(),
     ),
   );
 }
 
-class User_profile extends StatelessWidget {
-  const User_profile({Key? key});
+class UserProfile extends StatelessWidget {
+  const UserProfile({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -106,37 +106,58 @@ class User_profile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                ListTile(
-                  dense: true,
-                  leading: Icon(Icons.settings),
-                  title: Text(
-                    'Settings',
-                    style: TextStyle(
-                      color: const Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 18, // Change font size here
-                    ),
+                TextButton(
+                  onPressed: () {
+                    // Button action
+                  },
+                  child: Row(
+                    children: [
+                      Icon(Icons.settings),
+                      SizedBox(width: 10),
+                      Text(
+                        'Settings',
+                        style: TextStyle(
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 18, // Change font size here
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                ListTile(
-                  dense: true,
-                  leading: Icon(Icons.shopping_cart),
-                  title: Text(
-                    'Cart',
-                    style: TextStyle(
-                      color: const Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 14, // Change font size here
-                    ),
+                TextButton(
+                  onPressed: () {
+                    // Button action
+                  },
+                  child: Row(
+                    children: [
+                      Icon(Icons.shopping_cart),
+                      SizedBox(width: 10),
+                      Text(
+                        'Cart',
+                        style: TextStyle(
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 14, // Change font size here
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                ListTile(
-                  dense: true,
-                  leading: Icon(Icons.location_on),
-                  title: Text(
-                    'Location',
-                    style: TextStyle(
-                      color: const Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 14, // Change font size here
-                    ),
+                TextButton(
+                  onPressed: () {
+                    // Button action
+                  },
+                  child: Row(
+                    children: [
+                      Icon(Icons.location_on),
+                      SizedBox(width: 10),
+                      Text(
+                        'Location',
+                        style: TextStyle(
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 14, // Change font size here
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -155,26 +176,40 @@ class User_profile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                ListTile(
-                  dense: true,
-                  leading: Icon(Icons.notifications),
-                  title: Text(
-                    'Notification',
-                    style: TextStyle(
-                      color: const Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 18, // Change font size here
-                    ),
+                TextButton(
+                  onPressed: () {
+                    // Button action
+                  },
+                  child: Row(
+                    children: [
+                      Icon(Icons.notifications),
+                      SizedBox(width: 10),
+                      Text(
+                        'Notification',
+                        style: TextStyle(
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 18, // Change font size here
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                ListTile(
-                  dense: true,
-                  leading: Icon(Icons.notifications_active),
-                  title: Text(
-                    'Pop-up Notification',
-                    style: TextStyle(
-                      color: const Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 14, // Change font size here
-                    ),
+                TextButton(
+                  onPressed: () {
+                    // Button action
+                  },
+                  child: Row(
+                    children: [
+                      Icon(Icons.notifications_active),
+                      SizedBox(width: 10),
+                      Text(
+                        'Pop-up Notification',
+                        style: TextStyle(
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 14, // Change font size here
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -193,48 +228,76 @@ class User_profile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                ListTile(
-                  dense: true,
-                  leading: Icon(Icons.more_vert),
-                  title: Text(
-                    'Others',
-                    style: TextStyle(
-                      color: const Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 18, // Change font size here
-                    ),
+                TextButton(
+                  onPressed: () {
+                    // Button action
+                  },
+                  child: Row(
+                    children: [
+                      Icon(Icons.more_vert),
+                      SizedBox(width: 10),
+                      Text(
+                        'Others',
+                        style: TextStyle(
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 18, // Change font size here
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                ListTile(
-                  dense: true,
-                  leading: Icon(Icons.info),
-                  title: Text(
-                    'About Us',
-                    style: TextStyle(
-                      color: const Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 14, // Change font size here
-                    ),
+                TextButton(
+                  onPressed: () {
+                    // Button action
+                  },
+                  child: Row(
+                    children: [
+                      Icon(Icons.info),
+                      SizedBox(width: 10),
+                      Text(
+                        'About Us',
+                        style: TextStyle(
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 14, // Change font size here
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                ListTile(
-                  dense: true,
-                  leading: Icon(Icons.headset_mic),
-                  title: Text(
-                    'Customer Service',
-                    style: TextStyle(
-                      color: const Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 14, // Change font size here
-                    ),
+                TextButton(
+                  onPressed: () {
+                    // Button action
+                  },
+                  child: Row(
+                    children: [
+                      Icon(Icons.headset_mic),
+                      SizedBox(width: 10),
+                      Text(
+                        'Customer Service',
+                        style: TextStyle(
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 14, // Change font size here
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                ListTile(
-                  dense: true,
-                  leading: Icon(Icons.rate_review),
-                  title: Text(
-                    'User’s Review',
-                    style: TextStyle(
-                      color: const Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 14, // Change font size here
-                    ),
+                TextButton(
+                  onPressed: () {
+                    // Button action
+                  },
+                  child: Row(
+                    children: [
+                      Icon(Icons.rate_review),
+                      SizedBox(width: 10),
+                      Text(
+                        'User’s Review',
+                        style: TextStyle(
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 14, // Change font size here
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
