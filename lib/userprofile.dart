@@ -1,5 +1,6 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, camel_case_types
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, camel_case_types, unused_import
 
+import 'package:farm_linker/mycart.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -46,6 +47,7 @@ class UserProfile extends StatelessWidget {
                       style: TextStyle(
                         color: const Color.fromARGB(255, 0, 0, 0),
                         fontSize: 18,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
@@ -117,6 +119,7 @@ class UserProfile extends StatelessWidget {
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
                           fontSize: 18,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
@@ -125,6 +128,10 @@ class UserProfile extends StatelessWidget {
                 TextButton(
                   onPressed: () {
                     // Button action
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyCart()),
+                    );
                   },
                   child: Row(
                     children: [
@@ -187,6 +194,7 @@ class UserProfile extends StatelessWidget {
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
                           fontSize: 18,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
@@ -239,6 +247,7 @@ class UserProfile extends StatelessWidget {
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
                           fontSize: 18,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
