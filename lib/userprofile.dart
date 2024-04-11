@@ -45,14 +45,14 @@ class UserProfile extends StatelessWidget {
                       'Stefani Wong',
                       style: TextStyle(
                         color: const Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 18, // Change font size here
+                        fontSize: 18,
                       ),
                     ),
                     Text(
                       'Joined since 27 Dec 2020 ',
                       style: TextStyle(
                         color: const Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 12, // Change font size here
+                        fontSize: 12,
                       ),
                     ),
                   ],
@@ -66,8 +66,7 @@ class UserProfile extends StatelessWidget {
                   height: 70,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage(
-                          'asset/image/profile.png'), // Path to your PNG image
+                      image: AssetImage('asset/image/profile.png'),
                       fit: BoxFit.cover,
                     ),
                     shape: BoxShape.circle,
@@ -82,8 +81,7 @@ class UserProfile extends StatelessWidget {
                     // Button action
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(
-                        255, 32, 247, 139), // Change the color here
+                    backgroundColor: Color.fromARGB(255, 32, 247, 139),
                   ),
                   child: Text(
                     'Edit',
@@ -118,7 +116,7 @@ class UserProfile extends StatelessWidget {
                         'Settings',
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 18, // Change font size here
+                          fontSize: 18,
                         ),
                       ),
                     ],
@@ -136,7 +134,7 @@ class UserProfile extends StatelessWidget {
                         'Cart',
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 14, // Change font size here
+                          fontSize: 14,
                         ),
                       ),
                     ],
@@ -154,7 +152,7 @@ class UserProfile extends StatelessWidget {
                         'Location',
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 14, // Change font size here
+                          fontSize: 14,
                         ),
                       ),
                     ],
@@ -188,7 +186,7 @@ class UserProfile extends StatelessWidget {
                         'Notification',
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 18, // Change font size here
+                          fontSize: 18,
                         ),
                       ),
                     ],
@@ -206,7 +204,7 @@ class UserProfile extends StatelessWidget {
                         'Pop-up Notification',
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 14, // Change font size here
+                          fontSize: 14,
                         ),
                       ),
                     ],
@@ -240,7 +238,7 @@ class UserProfile extends StatelessWidget {
                         'Others',
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 18, // Change font size here
+                          fontSize: 18,
                         ),
                       ),
                     ],
@@ -258,7 +256,7 @@ class UserProfile extends StatelessWidget {
                         'About Us',
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 14, // Change font size here
+                          fontSize: 14,
                         ),
                       ),
                     ],
@@ -276,7 +274,7 @@ class UserProfile extends StatelessWidget {
                         'Customer Service',
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 14, // Change font size here
+                          fontSize: 14,
                         ),
                       ),
                     ],
@@ -294,7 +292,7 @@ class UserProfile extends StatelessWidget {
                         'User’s Review',
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 14, // Change font size here
+                          fontSize: 14,
                         ),
                       ),
                     ],

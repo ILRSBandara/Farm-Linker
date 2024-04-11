@@ -4,7 +4,6 @@ import 'dart:async';
 import 'package:farm_linker/navigationbar.dart';
 import 'package:farm_linker/userprofile.dart';
 import 'package:flutter/material.dart';
-// Assuming you have a NextPage widget to navigate to, import it here.
 
 class Loding extends StatefulWidget {
   const Loding({Key? key}) : super(key: key);
@@ -18,7 +17,6 @@ class _LodingState extends State<Loding> {
   void initState() {
     super.initState();
     Timer(const Duration(seconds: 4), () {
-      // Navigate to the NextPage widget after a delay
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (_) => const UserProfile()),
       );
@@ -42,8 +40,8 @@ class _LodingState extends State<Loding> {
               valueColor: AlwaysStoppedAnimation<Color>(
                   Color.fromARGB(255, 43, 181, 48)),
             ), // Loading indicator
-            SizedBox(height: 20), // Space after the loading bar
-            Text('Loading...'), // Optional loading text
+            SizedBox(height: 20),
+            Text('Loading...'),
           ],
         ),
       ),

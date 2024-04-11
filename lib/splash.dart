@@ -1,7 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:farm_linker/loding.dart'; // Make sure the file name and path are correct
+import 'package:farm_linker/loding.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -26,9 +26,9 @@ class _SplashState extends State<Splash> {
     return Scaffold(
       body: Center(
         child: Image.asset(
-          'asset/image/FarmLinker.png', // Corrected asset path
-          width: 300, // Specify your desired width
-          height: 300, // Specify your desired height
+          'asset/image/FarmLinker.png',
+          width: 300,
+          height: 300,
         ),
       ),
     );
