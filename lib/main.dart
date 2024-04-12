@@ -1,8 +1,9 @@
-import 'package:farm_linker/signinpage.dart';
+
+import 'package:farm_linker/screen/splash.dart';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,9 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:SignInPage(
-      
-      ),
+      home: Splash(),
     );
   }
 }
